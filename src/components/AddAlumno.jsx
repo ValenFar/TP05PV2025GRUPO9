@@ -1,14 +1,94 @@
+import { useState } from "react";
+import '../css/Add.css'
+const AddAlumno = ({ onAdd }) => {
+  const [form, setForm] = useState({
+    lu: "",
+    nombre: "",
+    apellido: "",
+    curso: "",
+    telefono: "",
+    mail: "",
+    domicilio: "",
+  });
 
-const AddAlumno = () =>{
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-    return(
-        <div className="prueba">
-            <h1>Cuestionario para agregar alumno</h1>
-            <p>Este cuestionario debe contar con <br />Libreta Universitaria: APU009999 <br />Nombre: Valentin <br />Apellido: Farfan <br />Curso: Tercero <br />Email: ejemplo@gmail.com <br />Domicilio: Av. Congreso 123 <br />Telefono: 388-000000 <br />Los objetos alumnos son almacenados en un array</p>
-        
-        </div>
-        
-    )
-}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onAdd(form); // llama a la funcion por proms
+    console.log(form)
+    console.log("el formulario se envio")
+    setForm({
+      lu: "",
+      nombre: "",
+      apellido: "",
+      curso: "",
+      telefono: "",
+      mail: "",
+      domicilio: "",
+    });
+    alert(`Alumno '${form.nombre} ${form.apellido}' Agregado Exitosamente!!`)
+  };
 
-export default AddAlumno
+  return (
+    <div className='container-product'>
+    <form onSubmit={handleSubmit} className='product-form'>
+      
+      <input
+        name="lu"
+        placeholder="Libreta Universitaria"
+        value={form.lu}
+        onChange={handleChange}
+        required
+      />
+      <input
+        name="nombre"
+        placeholder="Nombre"
+        value={form.nombre}
+        onChange={handleChange}
+        required
+      />
+      <input
+        name="apellido"
+        placeholder="Apellido"
+        value={form.apellido}
+        onChange={handleChange}
+        required
+      />
+      <input
+        name="curso"
+        placeholder="Curso"
+        value={form.curso}
+        onChange={handleChange}
+        required
+      />
+      <input
+        name="telefono"
+        placeholder="Teléfono"
+        value={form.telefono}
+        onChange={handleChange}
+        required
+      />
+      <input
+        name="mail"
+        placeholder="Mail"
+        value={form.mail}
+        onChange={handleChange}
+        required
+      />
+      <input
+        name="domicilio"
+        placeholder="Domicilio"
+        value={form.domicilio}
+        onChange={handleChange}
+        required
+      />
+      <button type="submit">Agregar Alumno</button>
+    </form>
+    </div>
+  );
+};
+
+export default AddAlumno;
