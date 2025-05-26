@@ -1,14 +1,24 @@
-
-const Alumnos = ()=>{
-
-    return(
-        <div>
-            <h1>Lista de Alumnos</h1>
-            <h2>En esta vista iran los alumnos en tarjetas con sus datos, boton de detalles y botones de eliminar y editar</h2>
-            <p>El boton de editar debe llevarlo a una vista especial similar al input de agregar alumno pero con los compos ya rellenados para poder simplemente modificar</p>
-        </div>
-    )
-
+const ListaAlumnos = ({ alumnos }) => {
+  console.log(alumnos)
+  console.log("llegaron los datos")
+  return(
+    <div>
+    <h2>Lista de Alumnos</h2>
+    {alumnos.length === 0 && <p>No hay alumnos cargados.</p>}
+    {alumnos.map((alumno, index) => (
+      <div key={index}>
+        <p><strong>LU:</strong> {alumno.lu}</p>
+        <p><strong>Nombre:</strong> {alumno.nombre}</p>
+        <p><strong>Apellido:</strong> {alumno.apellido}</p>
+        <p><strong>Curso:</strong> {alumno.curso}</p>
+        <p><strong>Teléfono:</strong> {alumno.telefono}</p>
+        <p><strong>Mail:</strong> {alumno.mail}</p>
+        <p><strong>Domicilio:</strong> {alumno.domicilio}</p>
+        <hr />
+      </div>
+    ))}
+  </div>
+  )
 }
 
-export default Alumnos;
+export default ListaAlumnos;
