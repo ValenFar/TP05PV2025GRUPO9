@@ -11,19 +11,3 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.accordion-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.accordion-header-parrafo {
-  padding-left: 30px;
-}
-
-.accordion-header-button {
-  width: 20%;
-}
-.accordion-header-button.delete{
-  margin-left: 2%;
-}
