@@ -22,7 +22,7 @@ const Principal = () => {
                 <strong>Bienvenidos a la Página Principal</strong>
               </Card.Title>
               <Card.Text className="lead">
-                Esta aplicación fue creada como parte del Trabajo Práctico N.º 5 de Programación Visual.
+                Esta aplicación fue creada como parte del TRABAJO PRACTICO N.º 5 de Programación Visual.
               </Card.Text>
               <Card.Text>
                 Usando <Badge bg="secondary">React</Badge>, <Badge bg="info">Vite</Badge> y <Badge bg="warning" text="dark">React Router DOM</Badge>, podés gestionar datos de alumnos: agregar, editar, eliminar y visualizar información detallada.
@@ -119,7 +119,7 @@ const Principal = () => {
                 El repositorio del proyecto debe estar en GitHub bajo el nombre: <code>pv_tp5_grupo9</code>
               </Card.Text>
               <Card.Text>
-                Todos los cambios deben realizarse en ramas, y se debe incluir un archivo <code>README.md</code> con integrantes y sus usuarios de GitHub
+                Todos los cambios deben realizarse en ramas, y se debe incluir un archivo <code>README.md</code> con integrantes y sus usuarios de GitHub.
               </Card.Text>
             </Card.Body>
           </Card>
