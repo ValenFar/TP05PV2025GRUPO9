@@ -119,7 +119,7 @@ const Principal = () => {
                 El repositorio del proyecto debe estar en GitHub bajo el nombre: <code>pv_tp5_grupo9</code>
               </Card.Text>
               <Card.Text>
-                Todos los cambios deben realizarse en ramas, y se debe incluir un archivo <code>README.md</code> con integrantes y sus usuarios de GitHub.
+                Todos los cambios deben realizarse en ramas, y se debe incluir un archivo <code>README.md</code> con integrantes y sus usuarios de GitHub
               </Card.Text>
             </Card.Body>
           </Card>
