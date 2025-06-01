@@ -109,7 +109,7 @@ const Nosotros = () => {
       <style>
         {`
           .transition-hover {
-            transition: transform 0.6s ease, box-shadow 0.5s ease;
+            transition: transform 0.7s ease, box-shadow 0.7s ease;
             overflow: visible !important;
           }
           .transition-hover:hover {
