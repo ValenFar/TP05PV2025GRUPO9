@@ -1,15 +1,24 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
 
 const Menu = () =>{
     return(
-    <nav className='menu'>
-        <Link to='/'>Principal </Link>
-        <Link to='/Lista-Alumnos'>Alumnos </Link>
-        <Link to='/Agregar-Alumno'>Agregar Alumno </Link>
-        <Link to='/error'>Error404</Link>
-        <Link to='/Nosotros'>Nosotros</Link>
-
-    </nav>
+    <Navbar bg="primary" variant="dark" className="rounded">
+    <Container>
+      <Navbar.Brand as={Link} to="/">Grupo 9</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link as={NavLink} to="/" end>Inicio</Nav.Link>
+          <Nav.Link as={NavLink} to="/Lista-Alumnos">Lista de Alumnos</Nav.Link>
+          <Nav.Link as={NavLink} to="/Agregar-Alumno">Agregar Alumno</Nav.Link>
+          <Nav.Link as={NavLink} to="/Nosotros">Nosotros</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
     )
 }
 
