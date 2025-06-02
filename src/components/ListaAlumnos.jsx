@@ -31,8 +31,8 @@ const ListaAlumnos = ({ alumnos, agregarAlumno, editarAlumno, eliminarAlumno }) 
           <Accordion.Item eventKey={index} key={alumno.lu}>
             <Accordion.Header className='accordion-header'>
               <p><strong>LU:</strong> {alumno.lu}</p>
-              <p className='accordion-header-parrafo' ><strong>Nombre:</strong> {alumno.nombre}</p>
-              <p className='accordion-header-parrafo' ><strong>Apellido:</strong> {alumno.apellido}</p>
+              <p className='accordion-header-parrafo' ><strong> Nombre: </strong> {alumno.nombre}</p>
+              <p className='accordion-header-parrafo' ><strong> Apellido: </strong> {alumno.apellido}</p>
             </Accordion.Header>
             <Accordion.Body style={{ background: '#dbffb1' }} >
               <p><strong>Curso:</strong> {alumno.curso}</p>
@@ -50,7 +50,7 @@ const ListaAlumnos = ({ alumnos, agregarAlumno, editarAlumno, eliminarAlumno }) 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>
-            {alumnoSeleccionado && <p><strong>LU:</strong> {alumnoSeleccionado.lu}</p>}
+            {alumnoSeleccionado && <p> <strong> LU: </strong> {alumnoSeleccionado.lu} </p>}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

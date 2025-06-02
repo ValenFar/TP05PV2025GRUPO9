@@ -16,8 +16,10 @@ const Error = () => {
       </div>
 
       <p className="mb-4 px-3">
-        Este error suele ocurrir cuando no se ingresa correctamente una URL válida de nuestros dominios.
-        Por favor, pruebe nuevamente o vuelva a la página principal.
+        <strong>
+          Este error suele ocurrir cuando no se ingresa correctamente una URL válida de nuestros dominios.
+          Por favor, ingrese una URL distinta o vuelva a la página principal.
+        </strong>
       </p>
 
       <Link to="/" className="btn btn-outline-primary d-flex align-items-center gap-2">
@@ -27,6 +29,5 @@ const Error = () => {
     </div>
   );
 };
-
 
 export default Error;
