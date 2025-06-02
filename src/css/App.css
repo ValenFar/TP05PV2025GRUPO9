@@ -1,4 +1,4 @@
-a {
+/*a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -74,4 +74,9 @@ button:focus-visible {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 100px #373737;
+}
+*/
+
+.bg-personalizado{
+  background-color: rgb(187, 193, 186);
 }

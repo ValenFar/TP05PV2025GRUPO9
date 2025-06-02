@@ -1,4 +1,4 @@
-.product-form {
+/*.product-form {
   
   margin: 20px;
   border-radius: 10px;
@@ -23,7 +23,7 @@
 .product-block {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; /* para que se ajuste en pantallas pequeñas */
+  flex-wrap: wrap; /* para que se ajuste en pantallas pequeñas //
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -67,3 +67,4 @@
 .product-form button:hover {
   background-color: #297241;
 }
+*/
