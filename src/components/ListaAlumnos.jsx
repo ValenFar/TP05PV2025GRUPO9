@@ -5,6 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import AddAlumno from './AddAlumno';
 
+
 const ListaAlumnos = ({ alumnos, agregarAlumno, editarAlumno, eliminarAlumno }) => {
   const [show, setShow] = useState(false);
   console.log(alumnos)

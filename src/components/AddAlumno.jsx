@@ -6,7 +6,6 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const AddAlumno = ({ onAdd, onEdit, modo = "agregar", alumno, onClose }) => {
   const [form, setForm] = useState(
     alumno || {
@@ -182,6 +181,7 @@ useEffect(() => {
       </Form>
     </Container>
     
+
   );
 };
 

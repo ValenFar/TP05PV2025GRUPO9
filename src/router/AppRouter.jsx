@@ -5,6 +5,7 @@ import Error from '../components/error'
 import Nosotros from '../components/nosotros'
 import AddAlumno from '../components/AddAlumno'
 
+
 const AppRouter = ({ alumnos, agregarAlumno, editarAlumno, eliminarAlumno }) =>{
     return(
         <div className='router'>
